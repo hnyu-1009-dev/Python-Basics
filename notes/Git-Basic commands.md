@@ -24,6 +24,9 @@ git init                                 # 初始化本地仓库
 git clone <url>                          # 克隆远程仓库
 git remote add origin <url>              # 绑定远程仓库
 git remote -v                            # 查看远程仓库地址
+git remote set-url gitee <url>           # gitee修改远程仓库地址
+git remote set-url origin <url>          # github修改远程仓库地址
+
 ```
 ## 🧩 四、查看状态与历史记录
 ```bash
