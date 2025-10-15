@@ -67,9 +67,13 @@ class ClassDefineTest:
 
     def __del__(self):
         print("This is a destructor")
+
+
 # ============================================================================================================
 # 类的继承
 class ParentClass:
+    pass
+
 
 # 实例化类
 class_define_test_obj = ClassDefineTest("This is an instance attribute")
