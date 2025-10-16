@@ -26,7 +26,8 @@ git remote add origin <url>              # 绑定远程仓库
 git remote -v                            # 查看远程仓库地址
 git remote set-url gitee <url>           # gitee修改远程仓库地址
 git remote set-url origin <url>          # github修改远程仓库地址
-
+git push origin main                     # 推送本地仓库到github远程仓库
+ git push gitee main                     # 推送本地仓库到gitee远程仓库
 ```
 ## 🧩 四、查看状态与历史记录
 ```bash
