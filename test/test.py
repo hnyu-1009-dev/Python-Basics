@@ -33,13 +33,13 @@ print("✅ 导入成功")
 # 可以直接使用 __init__.py 中导入的内容
 my_packages.func1()  # ✅ 输出：This is func1 in module1
 my_packages.func2()  # ✅ 输出：This is func2 in module2
-# # 2️⃣ 使用 “from 包 import *”
-# from my_packages import *
-#
-# # 只会导入 __all__ 中定义的内容：func1 和 func2
-# func1()  # ✅
-# func2()  # ✅
-# # 3️⃣ 如果在 __init__.py 中不导入 module1、module2
-# #    那么要用完整路径：
-# # import mypackage.module1
-# # mypackage.module1.func1()
+# 2️⃣ 使用 “from 包 import *”
+from my_packages import *
+
+# 只会导入 __all__ 中定义的内容：func1 和 func2
+func1()  # ✅
+func2()  # ✅
+# 3️⃣ 如果在 __init__.py 中不导入 module1、module2
+#    那么要用完整路径：
+# import mypackage.module1
+# mypackage.module1.func1()
